@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    
+    <script src="/static/js/jquery-1.11.2.min.js"></script>
+    <script src="/static/js/calculator.js"></script>
+</head>
+<body>
+    <div class="container">
+            <div id="title-panel">
+                <div id="title">Calculator</div>
+                <div id="subtitle">A Simple Calculator written in Python.</div>
+            </div>
+
+           <div class="row">
+               <div class="col-md-offset-4 col-md-6">
+                   <table id="calculator">
+                       <tbody>
+                           <tr>
+                               <td colspan="4" class="col-md-12 no-padding">
+                                   <div id="result-area">
+                                       <span id="result-int">0</span><span id="result-float"></span>
+                                       <div id="formula"> </div>
+                                   </div>
+                               </td>
+                           </tr>
+                           <tr>
+                                <td class="col-md-3 border-left btn-gray no-padding">
+                                    <div id="btn-LParenthesis" class="btn-cal">(</div>
+                                </td>
+                                <td class="col-md-3 border btn-gray no-padding">
+                                    <div id="btn-RParenthesis" class="btn-cal">)</div>
+                                </td>
+                                <td class="col-md-3 border no-padding btn-gray">
+                                    <div id="btn-clear" class="btn-cal" style="color: #e67e22">C</div>
+                                </td>
+                                <td class="col-md-3 border no-padding btn-gray">
+                                    <div id="btn-back" class="btn-cal" style="color: #e67e22">
+                                      <img src="/static/img/back.png" style="width: 45px">
+                                    </div>
+                                </td>
+                           </tr>
+                           <tr>
+                                <td class="col-md-3 border-left btn-white no-padding">
+                                    <div id="btn-7" class="btn-cal">7</div>
+                                </td>
+                                <td class="col-md-3 border btn-white no-padding">
+                                    <div id="btn-8" class="btn-cal">8</div>
+                                </td>
+                                <td class="col-md-3 border btn-white no-padding">
+                                    <div id="btn-9" class="btn-cal">9</div>
+                                </td>
+                                <td class="col-md-3 border btn-gray no-padding">
+                                    <div id="btn-add" class="btn-cal">+</div>
+                                </td>
+                           </tr>
+                           <tr>
+                                <td class="col-md-3 border-left btn-white no-padding">
+                                    <div id="btn-4" class="btn-cal">4</div>
+                                </td>
+                                <td class="col-md-3 border btn-white no-padding">
+                                    <div id="btn-5" class="btn-cal">5</div>
+                                </td>
+                                <td class="col-md-3 border btn-white no-padding">
+                                    <div id="btn-6" class="btn-cal">6</div>
+                                </td>
+                                <td class="col-md-3 border btn-gray no-padding">
+                                    <div id="btn-minus" class="btn-cal">-</div>
+                                </td>
+                           </tr>
+                           <tr>
+                                <td class="col-md-3 border-left btn-white no-padding">
+                                    <div id="btn-1" class="btn-cal">1</div>
+                                </td>
+                                <td class="col-md-3 border btn-white no-padding">
+                                    <div id="btn-2" class="btn-cal">2</div>
+                                </td>
+                                <td class="col-md-3 border btn-white no-padding">
+                                    <div id="btn-3" class="btn-cal">3</div>
+                                </td>
+                                <td class="col-md-3 border btn-gray no-padding">
+                                    <div id="btn-times" class="btn-cal">×</div>
+                                </td>
+                           </tr>
+                           <tr>
+                                <td class="col-md-3 border-bottom border-left btn-white no-padding">
+                                    <div id="btn-dot" class="btn-cal">.</div>
+                                </td>
+                                <td class="col-md-3 border-bottom btn-white no-padding">
+                                    <div id="btn-0" class="btn-cal">0</div>
+                                </td>
+                                <td class="col-md-3 border-bottom btn-gray no-padding">
+                                    <div id="btn-equal" class="btn-cal">=</div>
+                                </td>
+                                <td class="col-md-3 border-bottom btn-gray no-padding">
+                                    <div id="btn-divided" class="btn-cal">÷</div>
+                                </td>
+                           </tr>
+                       </tbody>
+                   </table>
+               </div>
+           </div>
+    </div>
+    <a id="forkme" href="https://github.com/cutecool/WebCalculator" target="_blank"><img src="/static/img/forkme.png"></a>
+    <div id="designed-author">Designed from <a href="https://dribbble.com/shots/1385325-Calculator-In-White?list=users&offset=3">@Philip Litassy</a></div>
+    
+    <script type="text/javascript">
+        document.onselectstart = function(){return false;}
+    </script>
+</body>
+</html>
